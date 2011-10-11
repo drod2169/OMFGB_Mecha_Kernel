@@ -39,6 +39,9 @@ mkdir -p $T/out/$PRODUCT/META-INF/com/google/android
 echo "====== Moving zImage and modules ======"
 mv $T/arch/arm/boot/zImage $T/out/$PRODUCT/kernel/zImage
 mv $T/drivers/net/wireless/bcm4329/bcm4329.ko $T/out/$PRODUCT/system/lib/modules/bcm4329.ko
+mv $T/drivers/staging/zram/zram.ko $T/out/$PRODUCT/system/lib/modules/zram.ko
+mv $T/lib/lzo/lzo_compress.ko $T/out/$PRODUCT/system/lib/modules/lzo_compress.ko
+mv $T/lib/lzo/lzo_decompress.ko $T/out/$PRODUCT/system/lib/modules/lzo_decompress.ko
 
 # Move update-zip-tools into the out directory for packaging
 
